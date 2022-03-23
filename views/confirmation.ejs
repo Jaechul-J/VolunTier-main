@@ -1,0 +1,120 @@
+<%- include("partials/header2") -%>
+
+<section class="section-steps">
+      <div class="row">
+        <h2 style="font-size: 60px;">Volunteer Confirmation</h2>
+      </div>
+      <div class="row">
+        <div class="column8 center">
+          <p style="font-size: 22px;">Before you sign up, let's confirm your name, e-mail, and phone number.<br>
+          Let's also verify that you have the required certifications for this event.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="formGroup2">
+            <label for="name">First Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Jason"
+              required
+            />
+          </div>
+        </div>
+        <div class="column">
+          <div class="formGroup2">
+            <label for="name">Last Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Smith"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="formGroup2">
+            <label for="name">E-mail</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Jason213@grinnell.edu"
+              required
+            />
+          </div>
+        </div>
+        <div class="column">
+          <div class="formGroup2">
+            <label for="name">Phone Number(Optional)</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="(641) 591-2281"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="center">
+        <p style="font-size: 35px; text-underline-position: below; color: #65CBB6;">Event Information</p>
+        <p style="font-size: 28px;">
+          Plant trees @ Merrill Park! by<br>
+Friends of the Forest Organization<br>
+Event Hoster: Jonathan Vance<br>
+Contact Host: example@gmail.com<br>
+03/10/2022 10 AM - 1 PM (3.0 Hours) <br>
+801 11th Ave, Grinnell, IA 50112<br>
+        </p>
+      </div>
+
+      <br>
+
+
+      <div class="row center">
+        <p style="font-size: 35px; text-underline-position: below; color: #65CBB6;">Event Description and Certifications</p>
+        <p style="font-size: 28px;">
+          We will be planting young oak and maple tree saplings around Merrill Park.<br>
+          Prepare to get your hands dirty as you dig holes and root out weeds! <br>
+          We will provide the plants, shovels, gloves, and water. There will be a lunch break at 11:30 AM<br>
+          where sandwiches and snacks are provided on us (including vegan and gluten free options!),<br>
+          but feel free to pack your own lunch. We are expecting a bright and warm day,<br>
+          so it will be a good idea to dress lightly and bring suncreen. See you there!
+        </p>
+      </div>
+
+        <br>
+
+      <div class="row">
+        <p style="font-size: 35px; text-underline-position: below; color: #65CBB6; margin-left: 25px;">You meet all of the required Certifications</p>
+        <br>
+        <label class="checkbox leftmar" for="myCheckboxId">
+          <input class="checkbox_input" type="checkbox" name="myCheckboxName" id="myCheckboxId">
+          <div class="checkbox_box"></div>
+          By clicking “Register and Add Event to Calendar”, I hereby agree to show up at the event with the intent to participate as per the organization’s policies.<br>
+          If I fail to do so, I may be subject to consequences according to the nonprofit organization’s policies. If I have significant negative feedback reported by<br>
+          this specific organization to VolunTier, I may be prevented from volunteering here in the future. Furthermore, severe and sufficient negative feedback<br>
+          may subject my VolunTier account to suspension. I may cancel my registration up to exactly 24 hours before the time the event begins with no consequences.<br>
+          Make my registration anonymous and don’t put my information on the registration list.
+        </label>
+      </div>
+
+      <br>
+<form class="" action="/calendar" method="post">
+  <input type="submit" value="Register and Add Event to Calendar" href="/calender" class="btn leftmar2" id="formSubmit" />
+</form>
+
+      <!-- End of row -->
+    </section>
+
+
+    <%- include("partials/footer") -%>

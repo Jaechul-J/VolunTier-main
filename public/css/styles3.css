@@ -1,0 +1,459 @@
+/*colors
+green: #65CBB6
+blue: #78BBE6
+purple: #828AC9
+*/
+
+/* ------------------------------------------------ Header -----------------------------------------*/
+.logo-header {
+  height: 4rem;
+  width: 3rem;
+  margin-right: 20px;
+}
+
+.btn-warning {
+  background-color: #78BBE6;
+  border-color: #65CBB6;
+}
+
+.btn-warning:hover {
+  background-color: #65CBB6;
+  border-color: #78BBE6;
+}
+
+
+/* ------------------------------------------------ Footer -----------------------------------------*/
+
+#facebook,
+#twitter,
+#google,
+#insta {
+  transition: color 1s;
+  font-size: 150%;
+}
+
+#facebook:hover {
+  color: #1877f2;
+}
+#twitter:hover {
+  color: #1da1f2;
+}
+#google:hover {
+  color: #ea4335;
+}
+#insta:hover {
+  color: #c32aa3;
+}
+
+footer {
+  padding: 40px;
+}
+
+/* ------------------------------------------------ Home -----------------------------------------*/
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo_home {
+  height: 200px;
+  width: 400px;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.column33 {
+  width: 33%;
+}
+
+.spaceBelow {
+  margin-bottom: 100px;
+}
+
+.btn-success {
+  background-color: #828AC9;
+  border-color: black;
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/* ------------------------------------------------ Map  -----------------------------------------*/
+.column3 {
+  float: left;
+  text-align: center;
+  width: 30%;
+}
+
+.column7 {
+  float: left;
+  width: 70%;
+}
+
+.mapSearch {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.list-group {
+  margin-left: 20px;
+}
+
+.list-group-item:hover{
+  background-color: #85F4FF;
+}
+
+/* ------------------------------------------------ Sign Up  -----------------------------------------*/
+tml,
+body {
+  height: 100%;
+}
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+/* ------------------------------------------------ Calender Up  -----------------------------------------*/
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+background: #dfebed;
+font-family: 'Roboto', sans-serif;
+}
+
+.container2 {
+align-items: center;
+display: flex;
+height: 100%;
+justify-content: center;
+margin: 0 auto;
+width: 100%;
+}
+
+.calendar {
+background: #2b4450;
+border-radius: 4px;
+box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+height: 535px;
+  perspective: 1000;
+transition: .9s;
+transform-style: preserve-3d;
+width: 100%;
+}
+
+/* Front - Calendar */
+.front {
+transform: rotateY(0deg);
+}
+
+.current-date {
+border-bottom: 1px solid rgba(73, 114, 133, .6);
+display: flex;
+justify-content: space-between;
+padding: 30px 40px;
+}
+
+.current-date h1 {
+color: #dfebed;
+font-size: 1.4em;
+font-weight: 300;
+}
+
+.week-days {
+color: #dfebed;
+display: flex;
+justify-content: space-between;
+font-weight: 600;
+padding: 30px 40px;
+}
+
+.days {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.weeks {
+color: #fff;
+display: flex;
+flex-direction: column;
+padding: 0 40px;
+}
+
+.weeks div {
+display: flex;
+font-size: 1.2em;
+font-weight: 300;
+justify-content: space-between;
+margin-bottom: 20px;
+width: 100%;
+}
+
+.last-month {
+opacity: .3;
+}
+
+.weeks span {
+padding: 10px;
+}
+
+.weeks span.active {
+background: #f78536;
+border-radius: 50%;
+}
+
+.weeks span:not(.last-month):hover {
+cursor: pointer;
+font-weight: 600;
+}
+
+.event {
+position: relative;
+}
+
+.event:after {
+content: '•';
+color: #f78536;
+font-size: 1.4em;
+position: absolute;
+right: -4px;
+top: -4px;
+}
+
+/* Back - Event form */
+
+.back {
+height: 100%;
+transform: rotateY(180deg);
+}
+
+.back input {
+background: none;
+border: none;
+border-bottom: 1px solid rgba(73, 114, 133, .6);
+color: #dfebed;
+font-size: 1.4em;
+font-weight: 300;
+padding: 30px 40px;
+width: 100%;
+}
+
+.info {
+color: #dfebed;
+display: flex;
+flex-direction: column;
+font-weight: 600;
+font-size: 1.2em;
+padding: 30px 40px;
+}
+
+.info div:not(.observations) {
+margin-bottom: 40px;
+}
+
+.info span {
+font-weight: 300;
+}
+
+.info .date {
+display: flex;
+justify-content: space-between;
+}
+
+.info .date p {
+width: 50%;
+}
+
+.info .address p {
+width: 100%;
+}
+
+.actions {
+bottom: 0;
+border-top: 1px solid rgba(73, 114, 133, .6);
+display: flex;
+justify-content: space-between;
+position: absolute;
+width: 100%;
+}
+
+.actions button {
+background: none;
+border: 0;
+color: #fff;
+font-weight: 600;
+letter-spacing: 3px;
+margin: 0;
+padding: 30px 0;
+text-transform: uppercase;
+width: 50%;
+}
+
+.actions button:first-of-type {
+border-right: 1px solid rgba(73, 114, 133, .6);
+}
+
+.actions button:hover {
+background: #497285;
+cursor: pointer;
+}
+
+.actions button:active {
+background: #5889a0;
+outline: none;
+}
+
+/* Flip animation */
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+backface-visibility: hidden;
+}
+
+
+
+
+/*colors
+green: #65CBB6
+blue: #78BBE6
+purple: #828AC9
+*/

@@ -1,0 +1,72 @@
+<%- include("partials/header2") -%>
+
+
+<section class="section-steps">
+      <div class="row">
+        <h2 style="font-size: 60px; color: #78BBE6;">What We Do</h2>
+      </div>
+      <div class="row">
+        <div class="column8 center">
+          <p>We started out with the simple question: What can we do to facilitate community involvement among young people?<br><br>
+            To answer this question,  we founded VolunTier, a way for people and organizations to connect with each other<br><br>
+            with the click of a button. With VolunTier, you can get verified community service hours and certifications<br><br>
+            in a fun and engaging way! You can share these achievements with your friends and encourage them to volunteer with you.<br><br>
+            If you’re a nonprofit organization looking to serve in a certain area, VolunTier provides low-cost automated solutions for<br><br>
+            finding valuable volunteer work. After posting volunteer events in your area with VolunTier,<br><br>
+            people in the area can sign up instantly. And if your work requires training or certifications, we also have that covered!<br><br>
+            Only volunteers with the certifications you require can sign up, and you are completely in control of certifying volunteers<br><br>
+            since you can host your own training sessions. We are committed to improving the social good. With VolunTier, <br><br>
+            whether you are a nonprofit or volunteer, you can help make our vision possible. Sign up or login and find volunteer events near you!</p>
+        </div>
+        </div>
+
+        <hr>
+
+      <div class="row bgg">
+        <p class="center" style="font-size: 60px; color: #78BBE6;">CONTACT US</p>
+
+        <form name="contactForm" action="/home" method="post">
+          <input type="hidden" name="form-name" value="contactForm" />
+          <div class="formGroup">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Name..."
+              required
+            />
+          </div>
+
+          <div class="formGroup">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email..."
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">What would you like to talk about?</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message..."
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+
+          <input type="submit" href="/" value="Submit" class="btn leftmar2" id="formSubmit" />
+        </form>
+      </div>
+      <br>
+
+      <!-- End of row -->
+    </section>
+
+    <%- include("partials/footer") -%>
